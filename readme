@@ -1,0 +1,13 @@
+The script creates the correct header for MSdoc document.
+Example:
+
+<?php
+include( 'HtmlToDoc.class.php' );
+$htmlToDoc = new HtmlToDoc();
+// convert html from url
+$htmlToDoc->createDocFromURL( "http://google.com", "output", true );
+// or from hdd
+$htmlToDoc->createDoc( "example.html", "output_location", true );
+?>
+
+At the output we have in the first case file output.doc to be displayed (this is called a third parameter, you can not write - default false, that is, by default the file will remain in the directory which contains the script) and in the second case, which also offers output_location.doc be downloaded for.
